@@ -4,9 +4,9 @@ class Producto {
      String referenciaProducto 
      String nombreProducto
     String localizacion
-     Long   idLista
      Long   categoria
-      int cantidad
+      int cantidadinicial
+      Long precio
      
      byte   eliminado
    
@@ -20,8 +20,12 @@ class Producto {
     static constraints = {
        referenciaProducto          nullable:false, maxSize:20 
        nombreProducto       nullable:false,maxSize:150 
-       idLista       nullable:true
        categoria  nullable:true
+        localizacion  nullable:true
+        cantidadinicial  nullable:true
+        precio  nullable:true
+       
+       
        
        
     }

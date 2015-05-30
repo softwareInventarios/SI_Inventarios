@@ -26,11 +26,7 @@
 					
 						<th><g:message code="inventario.listaDeProductos.label" default="Lista De Productos" /></th>
 					
-						<th><g:message code="inventario.listaDePrecios.label" default="Lista De Precios" /></th>
-					
 						<g:sortableColumn property="eliminado" title="${message(code: 'inventario.eliminado.label', default: 'Eliminado')}" />
-					
-						<th><g:message code="inventario.listadeprecios.label" default="Listadeprecios" /></th>
 					
 						<th><g:message code="inventario.producto.label" default="Producto" /></th>
 					
@@ -42,11 +38,7 @@
 					
 						<td><g:link action="show" id="${inventarioInstance.id}">${fieldValue(bean: inventarioInstance, field: "listaDeProductos")}</g:link></td>
 					
-						<td>${fieldValue(bean: inventarioInstance, field: "listaDePrecios")}</td>
-					
 						<td>${fieldValue(bean: inventarioInstance, field: "eliminado")}</td>
-					
-						<td>${fieldValue(bean: inventarioInstance, field: "listadeprecios")}</td>
 					
 						<td>${fieldValue(bean: inventarioInstance, field: "producto")}</td>
 					

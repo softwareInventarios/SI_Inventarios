@@ -23,15 +23,6 @@
 			</g:if>
 			<ol class="property-list conteo">
 			
-				<g:if test="${conteoInstance?.referenciaProducto}">
-				<li class="fieldcontain">
-					<span id="referenciaProducto-label" class="property-label"><g:message code="conteo.referenciaProducto.label" default="Referencia Producto" /></span>
-					
-						<span class="property-value" aria-labelledby="referenciaProducto-label"><g:fieldValue bean="${conteoInstance}" field="referenciaProducto"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${conteoInstance?.contado}">
 				<li class="fieldcontain">
 					<span id="contado-label" class="property-label"><g:message code="conteo.contado.label" default="Contado" /></span>

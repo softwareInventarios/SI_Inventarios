@@ -28,13 +28,11 @@
 					
 						<g:sortableColumn property="nombreProducto" title="${message(code: 'producto.nombreProducto.label', default: 'Nombre Producto')}" />
 					
-						<g:sortableColumn property="categoria" title="${message(code: 'producto.categoria.label', default: 'Categoria')}" />
-					
-						<g:sortableColumn property="localizacion" title="${message(code: 'producto.localizacion.label', default: 'Localizacion')}" />
-					
 						<g:sortableColumn property="cantidadinicial" title="${message(code: 'producto.cantidadinicial.label', default: 'Cantidadinicial')}" />
 					
 						<g:sortableColumn property="precio" title="${message(code: 'producto.precio.label', default: 'Precio')}" />
+					
+						<g:sortableColumn property="eliminado" title="${message(code: 'producto.eliminado.label', default: 'Eliminado')}" />
 					
 					</tr>
 				</thead>
@@ -46,13 +44,11 @@
 					
 						<td>${fieldValue(bean: productoInstance, field: "nombreProducto")}</td>
 					
-						<td>${fieldValue(bean: productoInstance, field: "categoria")}</td>
-					
-						<td>${fieldValue(bean: productoInstance, field: "localizacion")}</td>
-					
 						<td>${fieldValue(bean: productoInstance, field: "cantidadinicial")}</td>
 					
 						<td>${fieldValue(bean: productoInstance, field: "precio")}</td>
+					
+						<td>${fieldValue(bean: productoInstance, field: "eliminado")}</td>
 					
 					</tr>
 				</g:each>

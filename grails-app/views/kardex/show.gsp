@@ -23,15 +23,6 @@
 			</g:if>
 			<ol class="property-list kardex">
 			
-				<g:if test="${kardexInstance?.referenciaProducto}">
-				<li class="fieldcontain">
-					<span id="referenciaProducto-label" class="property-label"><g:message code="kardex.referenciaProducto.label" default="Referencia Producto" /></span>
-					
-						<span class="property-value" aria-labelledby="referenciaProducto-label"><g:fieldValue bean="${kardexInstance}" field="referenciaProducto"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${kardexInstance?.cantidad}">
 				<li class="fieldcontain">
 					<span id="cantidad-label" class="property-label"><g:message code="kardex.cantidad.label" default="Cantidad" /></span>

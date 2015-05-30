@@ -24,8 +24,6 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="referenciaProducto" title="${message(code: 'conteo.referenciaProducto.label', default: 'Referencia Producto')}" />
-					
 						<g:sortableColumn property="contado" title="${message(code: 'conteo.contado.label', default: 'Contado')}" />
 					
 						<g:sortableColumn property="eliminado" title="${message(code: 'conteo.eliminado.label', default: 'Eliminado')}" />
@@ -38,9 +36,7 @@
 				<g:each in="${conteoInstanceList}" status="i" var="conteoInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${conteoInstance.id}">${fieldValue(bean: conteoInstance, field: "referenciaProducto")}</g:link></td>
-					
-						<td>${fieldValue(bean: conteoInstance, field: "contado")}</td>
+						<td><g:link action="show" id="${conteoInstance.id}">${fieldValue(bean: conteoInstance, field: "contado")}</g:link></td>
 					
 						<td>${fieldValue(bean: conteoInstance, field: "eliminado")}</td>
 					

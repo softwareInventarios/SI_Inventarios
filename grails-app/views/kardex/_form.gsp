@@ -2,14 +2,6 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: kardexInstance, field: 'referenciaProducto', 'error')} ">
-	<label for="referenciaProducto">
-		<g:message code="kardex.referenciaProducto.label" default="Referencia Producto" />
-		
-	</label>
-	<g:textField name="referenciaProducto" maxlength="20" value="${kardexInstance?.referenciaProducto}"/>
-</div>
-
 <div class="fieldcontain ${hasErrors(bean: kardexInstance, field: 'cantidad', 'error')} required">
 	<label for="cantidad">
 		<g:message code="kardex.cantidad.label" default="Cantidad" />

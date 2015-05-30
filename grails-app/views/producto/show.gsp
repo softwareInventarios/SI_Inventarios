@@ -41,24 +41,6 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${productoInstance?.categoria}">
-				<li class="fieldcontain">
-					<span id="categoria-label" class="property-label"><g:message code="producto.categoria.label" default="Categoria" /></span>
-					
-						<span class="property-value" aria-labelledby="categoria-label"><g:fieldValue bean="${productoInstance}" field="categoria"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${productoInstance?.localizacion}">
-				<li class="fieldcontain">
-					<span id="localizacion-label" class="property-label"><g:message code="producto.localizacion.label" default="Localizacion" /></span>
-					
-						<span class="property-value" aria-labelledby="localizacion-label"><g:fieldValue bean="${productoInstance}" field="localizacion"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${productoInstance?.cantidadinicial}">
 				<li class="fieldcontain">
 					<span id="cantidadinicial-label" class="property-label"><g:message code="producto.cantidadinicial.label" default="Cantidadinicial" /></span>
@@ -77,44 +59,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${productoInstance?.conteo}">
-				<li class="fieldcontain">
-					<span id="conteo-label" class="property-label"><g:message code="producto.conteo.label" default="Conteo" /></span>
-					
-						<g:each in="${productoInstance.conteo}" var="c">
-						<span class="property-value" aria-labelledby="conteo-label"><g:link controller="conteo" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></span>
-						</g:each>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${productoInstance?.eliminado}">
 				<li class="fieldcontain">
 					<span id="eliminado-label" class="property-label"><g:message code="producto.eliminado.label" default="Eliminado" /></span>
 					
 						<span class="property-value" aria-labelledby="eliminado-label"><g:fieldValue bean="${productoInstance}" field="eliminado"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${productoInstance?.inventario}">
-				<li class="fieldcontain">
-					<span id="inventario-label" class="property-label"><g:message code="producto.inventario.label" default="Inventario" /></span>
-					
-						<g:each in="${productoInstance.inventario}" var="i">
-						<span class="property-value" aria-labelledby="inventario-label"><g:link controller="inventario" action="show" id="${i.id}">${i?.encodeAsHTML()}</g:link></span>
-						</g:each>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${productoInstance?.kardex}">
-				<li class="fieldcontain">
-					<span id="kardex-label" class="property-label"><g:message code="producto.kardex.label" default="Kardex" /></span>
-					
-						<g:each in="${productoInstance.kardex}" var="k">
-						<span class="property-value" aria-labelledby="kardex-label"><g:link controller="kardex" action="show" id="${k.id}">${k?.encodeAsHTML()}</g:link></span>
-						</g:each>
 					
 				</li>
 				</g:if>

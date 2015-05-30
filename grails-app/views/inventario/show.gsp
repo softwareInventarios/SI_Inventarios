@@ -32,29 +32,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${inventarioInstance?.listaDePrecios}">
-				<li class="fieldcontain">
-					<span id="listaDePrecios-label" class="property-label"><g:message code="inventario.listaDePrecios.label" default="Lista De Precios" /></span>
-					
-						<span class="property-value" aria-labelledby="listaDePrecios-label"><g:link controller="listaDePrecios" action="show" id="${inventarioInstance?.listaDePrecios?.id}">${inventarioInstance?.listaDePrecios?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${inventarioInstance?.eliminado}">
 				<li class="fieldcontain">
 					<span id="eliminado-label" class="property-label"><g:message code="inventario.eliminado.label" default="Eliminado" /></span>
 					
 						<span class="property-value" aria-labelledby="eliminado-label"><g:fieldValue bean="${inventarioInstance}" field="eliminado"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${inventarioInstance?.listadeprecios}">
-				<li class="fieldcontain">
-					<span id="listadeprecios-label" class="property-label"><g:message code="inventario.listadeprecios.label" default="Listadeprecios" /></span>
-					
-						<span class="property-value" aria-labelledby="listadeprecios-label"><g:link controller="listaDePrecios" action="show" id="${inventarioInstance?.listadeprecios?.id}">${inventarioInstance?.listadeprecios?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

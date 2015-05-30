@@ -2,14 +2,6 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: conteoInstance, field: 'referenciaProducto', 'error')} ">
-	<label for="referenciaProducto">
-		<g:message code="conteo.referenciaProducto.label" default="Referencia Producto" />
-		
-	</label>
-	<g:textField name="referenciaProducto" maxlength="20" value="${conteoInstance?.referenciaProducto}"/>
-</div>
-
 <div class="fieldcontain ${hasErrors(bean: conteoInstance, field: 'contado', 'error')} required">
 	<label for="contado">
 		<g:message code="conteo.contado.label" default="Contado" />

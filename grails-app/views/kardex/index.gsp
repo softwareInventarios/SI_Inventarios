@@ -24,8 +24,6 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="referenciaProducto" title="${message(code: 'kardex.referenciaProducto.label', default: 'Referencia Producto')}" />
-					
 						<g:sortableColumn property="cantidad" title="${message(code: 'kardex.cantidad.label', default: 'Cantidad')}" />
 					
 						<g:sortableColumn property="tipoDeMovimiento" title="${message(code: 'kardex.tipoDeMovimiento.label', default: 'Tipo De Movimiento')}" />
@@ -42,9 +40,7 @@
 				<g:each in="${kardexInstanceList}" status="i" var="kardexInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${kardexInstance.id}">${fieldValue(bean: kardexInstance, field: "referenciaProducto")}</g:link></td>
-					
-						<td>${fieldValue(bean: kardexInstance, field: "cantidad")}</td>
+						<td><g:link action="show" id="${kardexInstance.id}">${fieldValue(bean: kardexInstance, field: "cantidad")}</g:link></td>
 					
 						<td>${fieldValue(bean: kardexInstance, field: "tipoDeMovimiento")}</td>
 					

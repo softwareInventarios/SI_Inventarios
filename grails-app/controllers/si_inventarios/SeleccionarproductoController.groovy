@@ -90,7 +90,7 @@ def calcularentradas() {
         
    }
    
-     def reportecompa() {
+     def reporteCompa() {
    
         def query = Conteo.where {
                             eliminado == 0

@@ -1,7 +1,3 @@
-<%@ page import="cuccrm.Operacion" %>
-
-
-
 <div class="fieldcontain ${hasErrors(bean: operacionInstance, field: 'nombreOperacion', 'error')} required">
 	<label for="nombreOperacion">
 		<g:message code="operacion.nombreOperacion.label" default="Nombre Operacion" />

@@ -60,7 +60,7 @@
     <body>
         <div class="container well " id="contenedor">
           <div class="row">
-           <img src="http://localhost:8080/cuccrm/images/avatar.png" id="avatar" >
+           <img src="http://localhost:8080/GrailsApplication1/images/avatar.png" id="avatar" >
           </div>
           <form class="login" action="autenticacion" method="POST">
               <div class="form-group">

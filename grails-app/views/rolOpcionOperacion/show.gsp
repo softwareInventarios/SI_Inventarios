@@ -1,5 +1,5 @@
 
-<%@ page import="cuccrm.RolOpcionOperacion" %>
+<%@ page import="si_inventarios.RolOpcionOperacion" %>
 <!DOCTYPE html>
 <html>
 	<head>

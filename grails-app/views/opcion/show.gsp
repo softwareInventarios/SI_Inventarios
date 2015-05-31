@@ -1,5 +1,3 @@
-
-<%@ page import="cuccrm.Opcion" %>
 <!DOCTYPE html>
 <html>
 	<head>

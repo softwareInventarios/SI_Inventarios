@@ -1,4 +1,4 @@
-<%@ page import="cuccrm.Usuario" %>
+
 <!DOCTYPE html>
 <html>
 	<head>

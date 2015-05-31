@@ -1,4 +1,4 @@
-<%@ page import="cuccrm.RolOpcionOperacion" %>
+<%@ page import="si_inventarios.RolOpcionOperacion" %>
 
 
 
@@ -23,7 +23,7 @@
 		<g:message code="rolOpcionOperacion.opcion.label" default="Opcion" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="opcion" name="opcion.id" from="${cuccrm.Opcion.list()}" optionKey="id" required="" value="${rolOpcionOperacionInstance?.opcion?.id}" class="many-to-one"/>
+	<g:select id="opcion" name="opcion.id" from="${si_inventarios.Opcion.list()}" optionKey="id" required="" value="${rolOpcionOperacionInstance?.opcion?.id}" class="many-to-one"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: rolOpcionOperacionInstance, field: 'operacion', 'error')} required">
@@ -31,7 +31,7 @@
 		<g:message code="rolOpcionOperacion.operacion.label" default="Operacion" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="operacion" name="operacion.id" from="${cuccrm.Operacion.list()}" optionKey="id" required="" value="${rolOpcionOperacionInstance?.operacion?.id}" class="many-to-one"/>
+	<g:select id="operacion" name="operacion.id" from="${si_inventarios.Operacion.list()}" optionKey="id" required="" value="${rolOpcionOperacionInstance?.operacion?.id}" class="many-to-one"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: rolOpcionOperacionInstance, field: 'rol', 'error')} required">
@@ -39,6 +39,6 @@
 		<g:message code="rolOpcionOperacion.rol.label" default="Rol" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="rol" name="rol.id" from="${cuccrm.Rol.list()}" optionKey="id" required="" value="${rolOpcionOperacionInstance?.rol?.id}" class="many-to-one"/>
+	<g:select id="rol" name="rol.id" from="${si_inventarios.Rol.list()}" optionKey="id" required="" value="${rolOpcionOperacionInstance?.rol?.id}" class="many-to-one"/>
 </div>
 

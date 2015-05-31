@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="2" failures="1" hostname="alex" name="si_inventarios.ConteoControllerSpec" tests="7" time="17.233" timestamp="2015-05-31T00:07:55">
+  <properties />
+  <testcase classname="si_inventarios.ConteoControllerSpec" name="Test the index action returns the correct model" time="12.147" />
+  <testcase classname="si_inventarios.ConteoControllerSpec" name="Test the create action returns the correct model" time="0.343" />
+  <testcase classname="si_inventarios.ConteoControllerSpec" name="Test the save action correctly persists an instance" time="0.913">
+    <error message="Cannot redirect for object [si_inventarios.Conteo : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [si_inventarios.Conteo : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at si_inventarios.ConteoController.tt__save_closure9_closure14(ConteoController.groovy:43)
+	at si_inventarios.ConteoController.$tt__save(ConteoController.groovy:40)
+	at si_inventarios.ConteoControllerSpec.Test the save action correctly persists an instance(ConteoControllerSpec.groovy:52)
+</error>
+  </testcase>
+  <testcase classname="si_inventarios.ConteoControllerSpec" name="Test that the show action returns the correct model" time="0.631" />
+  <testcase classname="si_inventarios.ConteoControllerSpec" name="Test that the edit action returns the correct model" time="0.392" />
+  <testcase classname="si_inventarios.ConteoControllerSpec" name="Test the update action performs an update on a valid domain instance" time="1.401">
+    <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at si_inventarios.ConteoControllerSpec.Test the update action performs an update on a valid domain instance(ConteoControllerSpec.groovy:118)
+</error>
+  </testcase>
+  <testcase classname="si_inventarios.ConteoControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.627">
+    <failure message="Condition not satisfied:&#xa;&#xa;Conteo.count() == 1&#xa;       |       |&#xa;       0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Conteo.count() == 1
+       |       |
+       0       false
+
+	at si_inventarios.ConteoControllerSpec.Test that the delete action deletes an instance if it exists(ConteoControllerSpec.groovy:136)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+  <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+</testsuite>

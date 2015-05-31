@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="2" failures="1" hostname="alex" id="0" name="ConteoControllerSpec" package="si_inventarios" tests="7" time="17.233" timestamp="2015-05-31T00:07:55">
+      <properties />
+
+      <testcase classname="si_inventarios.ConteoControllerSpec" name="Test the index action returns the correct model" time="12.147" />
+
+      <testcase classname="si_inventarios.ConteoControllerSpec" name="Test the create action returns the correct model" time="0.343" />
+
+      <testcase classname="si_inventarios.ConteoControllerSpec" name="Test the save action correctly persists an instance" time="0.913">
+          <error message="Cannot redirect for object [si_inventarios.Conteo : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [si_inventarios.Conteo : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at si_inventarios.ConteoController.tt__save_closure9_closure14(ConteoController.groovy:43)
+	at si_inventarios.ConteoController.$tt__save(ConteoController.groovy:40)
+	at si_inventarios.ConteoControllerSpec.Test the save action correctly persists an instance(ConteoControllerSpec.groovy:52)
+</error>
+
+      </testcase>
+
+      <testcase classname="si_inventarios.ConteoControllerSpec" name="Test that the show action returns the correct model" time="0.631" />
+
+      <testcase classname="si_inventarios.ConteoControllerSpec" name="Test that the edit action returns the correct model" time="0.392" />
+
+      <testcase classname="si_inventarios.ConteoControllerSpec" name="Test the update action performs an update on a valid domain instance" time="1.401">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at si_inventarios.ConteoControllerSpec.Test the update action performs an update on a valid domain instance(ConteoControllerSpec.groovy:118)
+</error>
+
+      </testcase>
+
+      <testcase classname="si_inventarios.ConteoControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.627">
+          <failure message="Condition not satisfied:&#xa;&#xa;Conteo.count() == 1&#xa;       |       |&#xa;       0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Conteo.count() == 1
+       |       |
+       0       false
+
+	at si_inventarios.ConteoControllerSpec.Test that the delete action deletes an instance if it exists(ConteoControllerSpec.groovy:136)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="alex" id="1" name="InventarioControllerSpec" package="si_inventarios" tests="7" time="4.06" timestamp="2015-05-31T00:08:13">
+      <properties />
+
+      <testcase classname="si_inventarios.InventarioControllerSpec" name="Test the index action returns the correct model" time="0.827" />
+
+      <testcase classname="si_inventarios.InventarioControllerSpec" name="Test the create action returns the correct model" time="0.246" />
+
+      <testcase classname="si_inventarios.InventarioControllerSpec" name="Test the save action correctly persists an instance" time="0.345">
+          <error message="Cannot redirect for object [si_inventarios.Inventario : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [si_inventarios.Inventario : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at si_inventarios.InventarioController.tt__save_closure9_closure14(InventarioController.groovy:43)
+	at si_inventarios.InventarioController.$tt__save(InventarioController.groovy:40)
+	at si_inventarios.InventarioControllerSpec.Test the save action correctly persists an instance(InventarioControllerSpec.groovy:52)
+</error>
+
+      </testcase>
+
+      <testcase classname="si_inventarios.InventarioControllerSpec" name="Test that the show action returns the correct model" time="0.231" />
+
+      <testcase classname="si_inventarios.InventarioControllerSpec" name="Test that the edit action returns the correct model" time="0.239" />
+
+      <testcase classname="si_inventarios.InventarioControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.31">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at si_inventarios.InventarioControllerSpec.Test the update action performs an update on a valid domain instance(InventarioControllerSpec.groovy:118)
+</error>
+
+      </testcase>
+
+      <testcase classname="si_inventarios.InventarioControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.365">
+          <failure message="Condition not satisfied:&#xa;&#xa;Inventario.count() == 1&#xa;           |       |&#xa;           0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Inventario.count() == 1
+           |       |
+           0       false
+
+	at si_inventarios.InventarioControllerSpec.Test that the delete action deletes an instance if it exists(InventarioControllerSpec.groovy:136)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="alex" id="2" name="KardexControllerSpec" package="si_inventarios" tests="7" time="4.122" timestamp="2015-05-31T00:08:17">
+      <properties />
+
+      <testcase classname="si_inventarios.KardexControllerSpec" name="Test the index action returns the correct model" time="2.088" />
+
+      <testcase classname="si_inventarios.KardexControllerSpec" name="Test the create action returns the correct model" time="0.307" />
+
+      <testcase classname="si_inventarios.KardexControllerSpec" name="Test the save action correctly persists an instance" time="0.323">
+          <error message="Cannot redirect for object [si_inventarios.Kardex : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [si_inventarios.Kardex : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at si_inventarios.KardexController.tt__save_closure9_closure14(KardexController.groovy:43)
+	at si_inventarios.KardexController.$tt__save(KardexController.groovy:40)
+	at si_inventarios.KardexControllerSpec.Test the save action correctly persists an instance(KardexControllerSpec.groovy:52)
+</error>
+
+      </testcase>
+
+      <testcase classname="si_inventarios.KardexControllerSpec" name="Test that the show action returns the correct model" time="0.226" />
+
+      <testcase classname="si_inventarios.KardexControllerSpec" name="Test that the edit action returns the correct model" time="0.199" />
+
+      <testcase classname="si_inventarios.KardexControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.294">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at si_inventarios.KardexControllerSpec.Test the update action performs an update on a valid domain instance(KardexControllerSpec.groovy:118)
+</error>
+
+      </testcase>
+
+      <testcase classname="si_inventarios.KardexControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.195">
+          <failure message="Condition not satisfied:&#xa;&#xa;Kardex.count() == 1&#xa;       |       |&#xa;       0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Kardex.count() == 1
+       |       |
+       0       false
+
+	at si_inventarios.KardexControllerSpec.Test that the delete action deletes an instance if it exists(KardexControllerSpec.groovy:136)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="alex" id="3" name="ParametroControllerSpec" package="si_inventarios" tests="7" time="4.41" timestamp="2015-05-31T00:08:21">
+      <properties />
+
+      <testcase classname="si_inventarios.ParametroControllerSpec" name="Test the index action returns the correct model" time="1.234" />
+
+      <testcase classname="si_inventarios.ParametroControllerSpec" name="Test the create action returns the correct model" time="0.498" />
+
+      <testcase classname="si_inventarios.ParametroControllerSpec" name="Test the save action correctly persists an instance" time="0.53">
+          <error message="Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at si_inventarios.ParametroController.tt__save_closure9_closure14(ParametroController.groovy:43)
+	at si_inventarios.ParametroController.$tt__save(ParametroController.groovy:40)
+	at si_inventarios.ParametroControllerSpec.Test the save action correctly persists an instance(ParametroControllerSpec.groovy:52)
+</error>
+
+      </testcase>
+
+      <testcase classname="si_inventarios.ParametroControllerSpec" name="Test that the show action returns the correct model" time="0.353" />
+
+      <testcase classname="si_inventarios.ParametroControllerSpec" name="Test that the edit action returns the correct model" time="0.408" />
+
+      <testcase classname="si_inventarios.ParametroControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.563">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at si_inventarios.ParametroControllerSpec.Test the update action performs an update on a valid domain instance(ParametroControllerSpec.groovy:118)
+</error>
+
+      </testcase>
+
+      <testcase classname="si_inventarios.ParametroControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.443">
+          <failure message="Condition not satisfied:&#xa;&#xa;Parametro.count() == 1&#xa;          |       |&#xa;          0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Parametro.count() == 1
+          |       |
+          0       false
+
+	at si_inventarios.ParametroControllerSpec.Test that the delete action deletes an instance if it exists(ParametroControllerSpec.groovy:136)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="alex" id="4" name="ProductoControllerSpec" package="si_inventarios" tests="7" time="2.202" timestamp="2015-05-31T00:08:25">
+      <properties />
+
+      <testcase classname="si_inventarios.ProductoControllerSpec" name="Test the index action returns the correct model" time="0.661" />
+
+      <testcase classname="si_inventarios.ProductoControllerSpec" name="Test the create action returns the correct model" time="0.239" />
+
+      <testcase classname="si_inventarios.ProductoControllerSpec" name="Test the save action correctly persists an instance" time="0.196">
+          <error message="Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at si_inventarios.ProductoController.tt__save_closure9_closure14(ProductoController.groovy:43)
+	at si_inventarios.ProductoController.$tt__save(ProductoController.groovy:40)
+	at si_inventarios.ProductoControllerSpec.Test the save action correctly persists an instance(ProductoControllerSpec.groovy:52)
+</error>
+
+      </testcase>
+
+      <testcase classname="si_inventarios.ProductoControllerSpec" name="Test that the show action returns the correct model" time="0.176" />
+
+      <testcase classname="si_inventarios.ProductoControllerSpec" name="Test that the edit action returns the correct model" time="0.12" />
+
+      <testcase classname="si_inventarios.ProductoControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.249">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at si_inventarios.ProductoControllerSpec.Test the update action performs an update on a valid domain instance(ProductoControllerSpec.groovy:118)
+</error>
+
+      </testcase>
+
+      <testcase classname="si_inventarios.ProductoControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.132">
+          <failure message="Condition not satisfied:&#xa;&#xa;Producto.count() == 1&#xa;         |       |&#xa;         0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Producto.count() == 1
+         |       |
+         0       false
+
+	at si_inventarios.ProductoControllerSpec.Test that the delete action deletes an instance if it exists(ProductoControllerSpec.groovy:136)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="alex" id="5" name="ValorParametroControllerSpec" package="si_inventarios" tests="7" time="3.494" timestamp="2015-05-31T00:08:28">
+      <properties />
+
+      <testcase classname="si_inventarios.ValorParametroControllerSpec" name="Test the index action returns the correct model" time="1.503" />
+
+      <testcase classname="si_inventarios.ValorParametroControllerSpec" name="Test the create action returns the correct model" time="0.503" />
+
+      <testcase classname="si_inventarios.ValorParametroControllerSpec" name="Test the save action correctly persists an instance" time="0.437">
+          <error message="Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at si_inventarios.ValorParametroController.tt__save_closure9_closure14(ValorParametroController.groovy:43)
+	at si_inventarios.ValorParametroController.$tt__save(ValorParametroController.groovy:40)
+	at si_inventarios.ValorParametroControllerSpec.Test the save action correctly persists an instance(ValorParametroControllerSpec.groovy:52)
+</error>
+
+      </testcase>
+
+      <testcase classname="si_inventarios.ValorParametroControllerSpec" name="Test that the show action returns the correct model" time="0.323" />
+
+      <testcase classname="si_inventarios.ValorParametroControllerSpec" name="Test that the edit action returns the correct model" time="0.26" />
+
+      <testcase classname="si_inventarios.ValorParametroControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.319">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at si_inventarios.ValorParametroControllerSpec.Test the update action performs an update on a valid domain instance(ValorParametroControllerSpec.groovy:118)
+</error>
+
+      </testcase>
+
+      <testcase classname="si_inventarios.ValorParametroControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.138">
+          <failure message="Condition not satisfied:&#xa;&#xa;ValorParametro.count() == 1&#xa;               |       |&#xa;               0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+ValorParametro.count() == 1
+               |       |
+               0       false
+
+	at si_inventarios.ValorParametroControllerSpec.Test that the delete action deletes an instance if it exists(ValorParametroControllerSpec.groovy:136)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

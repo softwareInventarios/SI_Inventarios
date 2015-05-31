@@ -3,24 +3,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="layout" content="main">
+		<meta name="layout" content="mainb">
 		<g:set var="entityName" value="${message(code: 'valorParametro.label', default: 'ValorParametro')}" />
 		<title><g:message code="default.list.label" args="[entityName]" /></title>
 	</head>
 	<body>
-		<a href="#list-valorParametro" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-		<div class="nav" role="navigation">
-			<ul>
-				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
-			</ul>
-		</div>
+		
 		<div id="list-valorParametro" class="content scaffold-list" role="main">
-			<h1><g:message code="default.list.label" args="[entityName]" /></h1>
+			<h3 align="center">Valor Parametro</h3>
 			<g:if test="${flash.message}">
 				<div class="message" role="status">${flash.message}</div>
 			</g:if>
-			<table>
+			<table class="table table-bordered table-hover table-striped table-responsive">
 			<thead>
 					<tr>
 					
@@ -58,6 +52,12 @@
 				</g:each>
 				</tbody>
 			</table>
+                        <div class="nav" role="navigation">
+                                <g:link class="btn btn-primary" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link>
+				<a class="btn btn-warning" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a>
+				
+			
+		</div>
 			<div class="pagination">
 				<g:paginate total="${valorParametroInstanceCount ?: 0}" />
 			</div>

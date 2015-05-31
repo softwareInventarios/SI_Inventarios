@@ -1,0 +1,55 @@
+Testsuite: si_inventarios.ValorParametroControllerSpec
+Tests run: 7, Failures: 1, Errors: 2, Time elapsed: 3,494 sec
+------------- Standard Output ---------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+
+Testcase: Test the index action returns the correct model took 1,503 sec
+Testcase: Test the create action returns the correct model took 0,503 sec
+Testcase: Test the save action correctly persists an instance took 0,381 sec
+	Caused an ERROR
+Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at si_inventarios.ValorParametroController.tt__save_closure9_closure14(ValorParametroController.groovy:43)
+	at si_inventarios.ValorParametroController.$tt__save(ValorParametroController.groovy:40)
+	at si_inventarios.ValorParametroControllerSpec.Test the save action correctly persists an instance(ValorParametroControllerSpec.groovy:52)
+
+Testcase: Test that the show action returns the correct model took 0,323 sec
+Testcase: Test that the edit action returns the correct model took 0,26 sec
+Testcase: Test the update action performs an update on a valid domain instance took 0,303 sec
+	Caused an ERROR
+Cannot get property 'id' on null object
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at si_inventarios.ValorParametroControllerSpec.Test the update action performs an update on a valid domain instance(ValorParametroControllerSpec.groovy:118)
+
+Testcase: Test that the delete action deletes an instance if it exists took 0,121 sec
+	FAILED
+Condition not satisfied:
+
+ValorParametro.count() == 1
+               |       |
+               0       false
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+ValorParametro.count() == 1
+               |       |
+               0       false
+
+	at si_inventarios.ValorParametroControllerSpec.Test that the delete action deletes an instance if it exists(ValorParametroControllerSpec.groovy:136)
+
